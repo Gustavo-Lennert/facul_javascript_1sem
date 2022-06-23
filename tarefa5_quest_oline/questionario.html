@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <link rel="shortcut icon" href="https://yata-apix-c9985b74-619f-4b1c-8994-6bf50ecf5f06.lss.locawebcorp.com.br/bf4dde9ca37a47299119a802b5b56729.png" type="image/x-icon">
+
+    <script lang="Javascript" src="validacao.js"></script>
+    <link rel="stylesheet" href="styleQuest.css">
+
+    
+
+</head>
+<body onLoad="id()">
+    <main>
+        
+        
+        <form name="formulario">
+            <div id="infoForm">
+
+                <h1>Questionário</h1>
+                <img id="left" src="imagens/astro_quest.gif" alt="img">
+                <img id="right" src="imagens/astro_quest.gif" alt="img">
+                <label>Nome: </label>
+                <input class="user" type="text" name="formNome">
+                <br>
+                <label>E-mail: </label>
+                <input class="user" type="text" name="formEmail">
+                
+                <br>
+                <label>Acertos: </label>
+                <input class="result" type="text" name="formAcertos" id="acertos">
+                <label>Erros: </label>
+                <input class="result" type="text" name="formErros" id="erros">
+                <br>
+                <input type="button" id="enviar" name="enviar"  value="Enviar" onclick="Enviar()">
+            </div>
+
+            <p><strong>1)</strong> Nossa lua é caracterizado como:</p>
+           
+            <p><input type="button" class="quest" value="A" name="op1" onclick="verifica1(1)">Satélite natural</p>
+            <p><input type="button" class="quest" value="B" name="op2" onclick="verifica1(0)"> Planeta</p>
+            <p><input type="button" class="quest" value="C" name="op3" onclick="verifica1(0)"> Cometa</p>
+            <p><input type="button" class="quest" value="D" name="op4" onclick="verifica1(0)"> Estrela</p>
+            
+            <p><strong>2)</strong> O que é um eclipse?</p>
+
+            <p><input type="button" class="quest" value="A" name="op5" onclick="verifica2(1)"> Fenômeno onde um corpo celeste interpõe-se entre outro corpo celeste e uma fonte de luz, causando o escurecimento total ou parcial </p>
+            <p><input type="button" class="quest" value="B" name="op6" onclick="verifica2(0)"> Fenômeno onde um corpo celeste colide com outro, causando uma enorme explosão</p>
+            <p><input type="button" class="quest" value="C" name="op7" onclick="verifica2(0)"> Fenômeno onde os planetas se alinham, dentro de um plano celeste</p>
+            <p><input type="button" class="quest" value="D" name="op8" onclick="verifica2(0)"> Fenômeno correspondente ao nascimento de uma estrela anã</p>
+
+
+            <p><strong>3)</strong> O que é um eclipse solar?</p>
+
+            <p><input type="button" class="quest" value="A" name="op9" onclick="verifica3(0)"> Fenômeno astronômico que se diz respeito ao nascimento de nossa estrela</p>
+            <p><input type="button" class="quest" value="B" name="op10" onclick="verifica3(0)"> Fenômeno astronômico que ocorre sempre que o Sol se posicipna entre o planeta Terra e a Lua, causando escurecimento parcial sobre a superfície da terra</p>
+            <p><input type="button" class="quest" value="C" name="op11" onclick="verifica3(1)">Fenômeno astronômico que ocorre sempre que a Lua se posiciona entre o planeta Terra e o Sol, causando escurecimento parcial sobre a superfície da terra</p>
+            <p><input type="button" class="quest" value="D" name="op12" onclick="verifica3(0)"> Fênomeno astronômico correspondente a junção do sol com a lua</p>
+            
+            <p><strong>4)</strong> O que é eclipse lunar?</p>
+
+            <p><input type="button" class="quest" value="A" name="op13" onclick="verifica4(0)"></p>
+            <p><input type="button" class="quest" value="B" name="op14" onclick="verifica4(1)"></p>
+            <p><input type="button" class="quest" value="C" name="op15" onclick="verifica4(0)"></p>
+            <p><input type="button" class="quest" value="D" name="op16" onclick="verifica4(0)"></p>
+        
+            <p><strong>5)</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ad soluta dolores fuga quasi sapiente molestiae perspiciatis magni atque, eligendi, dicta voluptatem consequuntur qui officia voluptate! Magnam voluptates sequi velit?</p>
+
+            <p><input type="button" class="quest" value="A" name="op17" onclick="verifica5(1)"></p>
+            <p><input type="button" class="quest" value="B" name="op18" onclick="verifica5(0)"></p>
+            <p><input type="button" class="quest" value="C" name="op19" onclick="verifica5(0)"></p>
+            <p><input type="button" class="quest" value="D" name="op20" onclick="verifica5(0)"></p>
+            
+
+            <p><strong>6)</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ad soluta dolores fuga quasi sapiente molestiae perspiciatis magni atque, eligendi, dicta voluptatem consequuntur qui officia voluptate! Magnam voluptates sequi velit?</p>
+
+            <p><input type="button" class="quest" value="A" name="op21" onclick="verifica6(1)"></p>
+            <p><input type="button" class="quest" value="B" name="op22" onclick="verifica6(0)"></p>
+            <p><input type="button" class="quest" value="C" name="op23" onclick="verifica6(0)"></p>
+            <p><input type="button" class="quest" value="D" name="op24" onclick="verifica6(0)"></p>
+            
+
+            <p><strong>7)</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ad soluta dolores fuga quasi sapiente molestiae perspiciatis magni atque, eligendi, dicta voluptatem consequuntur qui officia voluptate! Magnam voluptates sequi velit?</p>
+
+            <p><input type="button" class="quest" value="A" name="op25" onclick="verifica7(1)"></p>
+            <p><input type="button" class="quest" value="B" name="op26" onclick="verifica7(0)"></p>
+            <p><input type="button" class="quest" value="C" name="op27" onclick="verifica7(0)"></p>
+            <p><input type="button" class="quest" value="D" name="op28" onclick="verifica7(0)"></p>
+
+
+            <p><strong>8)</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ad soluta dolores fuga quasi sapiente molestiae perspiciatis magni atque, eligendi, dicta voluptatem consequuntur qui officia voluptate! Magnam voluptates sequi velit?</p>
+
+            <p><input type="button" class="quest" value="A" name="op29" onclick="verifica8(1)"></p>
+            <p><input type="button" class="quest" value="B" name="op30" onclick="verifica8(0)"></p>
+            <p><input type="button" class="quest" value="C" name="op31" onclick="verifica8(0)"></p>
+            <p><input type="button" class="quest" value="D" name="op32" onclick="verifica8(0)"></p>
+
+            <p><strong>9)</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ad soluta dolores fuga quasi sapiente molestiae perspiciatis magni atque, eligendi, dicta voluptatem consequuntur qui officia voluptate! Magnam voluptates sequi velit? </p>
+
+            <p><input type="button" class="quest" value="A" name="op33" onclick="verifica9(1)"></p>
+            <p><input type="button" class="quest" value="B" name="op34" onclick="verifica9(0)"></p>
+            <p><input type="button" class="quest" value="C" name="op35" onclick="verifica9(0)"></p>
+            <p><input type="button" class="quest" value="D" name="op36" onclick="verifica9(0)"></p>
+
+            <p><strong>10)</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ad soluta dolores fuga quasi sapiente molestiae perspiciatis magni atque, eligendi, dicta voluptatem consequuntur qui officia voluptate! Magnam voluptates sequi velit?</p>
+
+            <p><input type="button" class="quest" value="A" name="op37" onclick="verifica10(1)"></p>
+            <p><input type="button" class="quest" value="B" name="op38" onclick="verifica10(0)"></p>
+            <p><input type="button" class="quest" value="C" name="op39" onclick="verifica10(0)"></p>
+            <p><input type="button" class="quest" value="D" name="op40" onclick="verifica10(0)"></p>
+        </form>
+        <br>
+        <a id="seta" href="#infoForm">
+            <img id="botaoUp" src="imagens/seta_quest.png" alt="botao">
+        </a>
+        
+    </main>  
+</body>
+</html>

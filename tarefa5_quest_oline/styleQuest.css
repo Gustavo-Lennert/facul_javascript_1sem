@@ -1,0 +1,98 @@
+body{
+    background-color: rgba(72, 87, 125, 0.927);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 35px;
+    color: rgb(147, 169, 201);
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin: 10px;
+}
+
+#infoForm{
+    background-color: white; 
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+#infoForm input{
+    margin: 5px;
+}
+
+#enviar{
+    padding: 3px;
+    margin: 50px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+#enviar:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.user{
+    width: 25%;
+    border-radius: 5px;
+}
+.result{
+    width: 40px;
+    border-radius: 5px;
+}
+
+p{
+    margin: 20px 170px 20px 170px;
+    color: white;
+    font-size: 17px;
+    text-align: justify;
+    text-shadow: 1px 1px 1px black;
+}
+
+.quest{
+    margin: 0 10px 5px 0px;
+    border-radius: 3px;
+    border: none;
+    height: 25px;
+    width: 25px;
+    transition: all 0.3s ease;
+}
+
+.quest:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#left{
+    height: 120px;
+    width: 120px;
+    float: left;
+}
+
+#right{
+    height: 120px;
+    width: 120px;
+    float: right;
+}
+
+#seta{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#botaoUp{
+    height: 35px;
+    width: 35px;
+    transition: all 0.2s ease;
+}
+
+#botaoUp:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    
+}

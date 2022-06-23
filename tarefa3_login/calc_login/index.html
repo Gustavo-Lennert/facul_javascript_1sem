@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+
+    <script lang="javascript" src="calculos.js"></script>
+
+    <style>
+        form{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <form name="formCalc" method="post" action="calculos.js">
+        <h2>Formulário</h2>
+      
+        <label>Calcuadora</label>
+        <br>
+        <br>    
+        <label>Number 1:</label>
+        <br>
+        <br>
+        <input type="text" name="number1" size=5> 
+        <br>
+        <br>
+        <label>Number 2:</label>
+        <br>
+        <br>
+        <input type="text" name="number2" size=5> 
+        <br>
+        <br>
+        <input type="button" value="+" onclick="calculos(1)">
+        <input type="button" value="x" onclick="calculos(2)">
+        <input type="button" value="-" onclick="calculos(3)">
+        <input type="button" value="/" onclick="calculos(4)">
+        <br>
+        <br>
+        <label>Result:</label>
+        <br>
+        <input type="text" name="result" size=5> 
+
+    </form>
+</body>
+</html>
